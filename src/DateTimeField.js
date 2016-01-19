@@ -373,10 +373,7 @@ export default class DateTimeField extends Component {
                   widgetStyle={this.state.widgetStyle}
             />
             <div className={"input-group date " + this.size()} ref="datetimepicker">
-              <input className="form-control" onChange={this.onChange} type="text" value={this.state.inputValue} {...this.props.inputProps}/>
-              <span className="input-group-addon" onBlur={this.onBlur} onClick={this.onClick} ref="dtpbutton">
-                <span className={classnames("glyphicon", this.state.buttonIcon)} />
-              </span>
+              <input className="form-control" onClick={this.onClick} onChange={this.onChange} type="text" value={this.state.inputValue} {...this.props.inputProps}/>
             </div>
           </div>
     );
